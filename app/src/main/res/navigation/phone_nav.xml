@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phone_nav"
+    app:startDestination="@id/logInFragment">
+
+    <fragment
+        android:id="@+id/phoneLogInFragment"
+        android:name="com.shivansh.firebasepractice.views.fragments.logInFragments.PhoneLogInFragment"
+        tools:layout="@layout/fragment_log_in"
+        android:label="Login" >
+        <action android:id="@+id/to_otp"
+            app:destination="@id/phoneOTPVerificationFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/phoneOTPVerificationFragment"
+        tools:layout="@layout/fragment_phone_log_in"
+        android:name="com.shivansh.firebasepractice.views.fragments.logInFragments.PhoneOTPVerificationFragment"
+        android:label="Enter Phone Number" />
+    <fragment
+        android:id="@+id/logInFragment"
+        tools:layout="@layout/fragment_phone_o_t_p_verification"
+        android:name="com.shivansh.firebasepractice.views.fragments.logInFragments.LogInFragment"
+        android:label="Otp" >
+        <action
+            android:id="@+id/action_logInFragment_to_phoneLogInFragment"
+            app:destination="@id/phoneLogInFragment" />
+    </fragment>
+</navigation>

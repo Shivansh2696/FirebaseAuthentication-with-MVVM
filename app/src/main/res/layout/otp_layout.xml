@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root_otp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/otp_edit_box1"
+            android:layout_weight=".7"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="30sp"
+            android:background="@drawable/edittext_curve_bg"/>
+
+        <EditText
+            android:id="@+id/otp_edit_box2"
+            android:layout_weight=".7"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/edittext_curve_bg"/>
+
+        <EditText
+            android:id="@+id/otp_edit_box3"
+            android:layout_weight=".7"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/edittext_curve_bg"/>
+
+        <EditText
+            android:id="@+id/otp_edit_box4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight=".7"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/edittext_curve_bg" />
+
+    <EditText
+        android:id="@+id/otp_edit_box5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginEnd="15dp"
+        android:layout_weight=".7"
+        android:inputType="number"
+        android:maxLength="1"
+        android:background="@drawable/edittext_curve_bg" />
+
+    <EditText
+        android:id="@+id/otp_edit_box6"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_weight=".7"
+        android:inputType="number"
+        android:maxLength="1"
+        android:background="@drawable/edittext_curve_bg" />
+
+
+    </LinearLayout>
